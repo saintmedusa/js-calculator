@@ -34,27 +34,22 @@ const calculate = function(input) {
 
 // OPERATION functions
 
-const add = function(num1, num2) {
-  return num1 + num2;
-}
-const sub = function(num1, num2) {
-  return num1 - num2;
-}
-const mult = function(num1, num2) {
-  return num1 * num2;
-}
-const div = function(num1, num2) {
+const add = (num1, num2) => num1 + num2;
+
+const sub = (num1, num2) => num1 - num2;
+
+const mult = (num1, num2) => num1 * num2;
+
+const div = (num1, num2) => {
   if (num2 === 0) {
     return "Cannot divide by 0"
   }
   return num1 / num2;
 }
-const mod = function(num1, num2) {
-  return num1 % num2;
-}
-const exp = function(num1, num2) {
-  return num1 ** num2;
-}
+
+const mod = (num1, num2) => num1 % num2;
+
+const exp = (num1, num2) => num1 ** num2;
 
 // TESTING with example inputs 
 
